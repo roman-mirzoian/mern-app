@@ -27,7 +27,7 @@ router.post(
 
       const candidate = await User.findOne({ email });
       if (candidate) {
-        return res.status(400).json({ message: "This iser already created" });
+        return res.status(400).json({ message: "This user already created" });
       }
 
       const hashedPassword = await bcrypt.hash(password, 12);
