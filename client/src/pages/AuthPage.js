@@ -49,6 +49,7 @@ export const AuthPage = () => {
                   type="text"
                   name="email"
                   className="auth-input"
+                  value={form.email}
                   onChange={changeHandler}
                 />
                 <label htmlFor="email">Enter email</label>
@@ -59,6 +60,7 @@ export const AuthPage = () => {
                   type="password"
                   name="password"
                   className="auth-input"
+                  value={form.password}
                   onChange={changeHandler}
                 />
                 <label htmlFor="password">Enter password</label>
